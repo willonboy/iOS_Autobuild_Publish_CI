@@ -1,0 +1,10 @@
+将上面的打包脚本(auto_compile_sh.sh)配合Mac系统中的launchctl工具来实现自动定时执行打包的任务
+创建launchctl工具要用到的plist文件:auto_compile_ipa.plist已经上传
+
+然后将auto_compile_ipa.plist文件复制或移动到 /Library/LaunchDaemons/目录下
+
+cd /Library/LaunchDaemons
+# 执行加载任务
+trojan:LaunchDaemons line0_dev$ launchctl load auto_compile_ipa.plist
+# 执行卸载任务
+trojan:LaunchDaemons line0_dev$ launchctl unload auto_compile_ipa.plist 

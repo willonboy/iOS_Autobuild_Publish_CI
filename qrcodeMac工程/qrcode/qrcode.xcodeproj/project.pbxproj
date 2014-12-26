@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5661F1B51A35D41A00A5CBB6 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5661F1B41A35D41A00A5CBB6 /* main.mm */; };
+		5661F1C21A35D43300A5CBB6 /* DataMatrix.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5661F1BC1A35D43300A5CBB6 /* DataMatrix.mm */; };
+		5661F1C31A35D43300A5CBB6 /* QR_Encode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5661F1BD1A35D43300A5CBB6 /* QR_Encode.cpp */; };
+		5661F1C41A35D43300A5CBB6 /* QREncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5661F1C11A35D43300A5CBB6 /* QREncoder.mm */; };
+		5661F1C61A35DBBC00A5CBB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5661F1C51A35DBBC00A5CBB6 /* CoreGraphics.framework */; };
+		5661F1CA1A35DBEB00A5CBB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5661F1C91A35DBEB00A5CBB6 /* Foundation.framework */; };
+		5661F1CC1A35E57700A5CBB6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5661F1CB1A35E57700A5CBB6 /* QuartzCore.framework */; };
+		5661F1CE1A35E8EE00A5CBB6 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5661F1CD1A35E8EE00A5CBB6 /* AppKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5661F1AF1A35D41A00A5CBB6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5661F1B11A35D41A00A5CBB6 /* qrcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = qrcode; sourceTree = BUILT_PRODUCTS_DIR; };
+		5661F1B41A35D41A00A5CBB6 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		5661F1BB1A35D43300A5CBB6 /* DataMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataMatrix.h; sourceTree = "<group>"; };
+		5661F1BC1A35D43300A5CBB6 /* DataMatrix.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DataMatrix.mm; sourceTree = "<group>"; };
+		5661F1BD1A35D43300A5CBB6 /* QR_Encode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QR_Encode.cpp; sourceTree = "<group>"; };
+		5661F1BE1A35D43300A5CBB6 /* QR_Encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QR_Encode.h; sourceTree = "<group>"; };
+		5661F1BF1A35D43300A5CBB6 /* QREncoder-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QREncoder-Prefix.pch"; sourceTree = "<group>"; };
+		5661F1C01A35D43300A5CBB6 /* QREncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QREncoder.h; sourceTree = "<group>"; };
+		5661F1C11A35D43300A5CBB6 /* QREncoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QREncoder.mm; sourceTree = "<group>"; };
+		5661F1C51A35DBBC00A5CBB6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5661F1C91A35DBEB00A5CBB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5661F1CB1A35E57700A5CBB6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5661F1CD1A35E8EE00A5CBB6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5661F1AE1A35D41A00A5CBB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5661F1CE1A35E8EE00A5CBB6 /* AppKit.framework in Frameworks */,
+				5661F1CC1A35E57700A5CBB6 /* QuartzCore.framework in Frameworks */,
+				5661F1CA1A35DBEB00A5CBB6 /* Foundation.framework in Frameworks */,
+				5661F1C61A35DBBC00A5CBB6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5661F1A81A35D41A00A5CBB6 = {
+			isa = PBXGroup;
+			children = (
+				5661F1CD1A35E8EE00A5CBB6 /* AppKit.framework */,
+				5661F1CB1A35E57700A5CBB6 /* QuartzCore.framework */,
+				5661F1C91A35DBEB00A5CBB6 /* Foundation.framework */,
+				5661F1C51A35DBBC00A5CBB6 /* CoreGraphics.framework */,
+				5661F1B31A35D41A00A5CBB6 /* qrcode */,
+				5661F1B21A35D41A00A5CBB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5661F1B21A35D41A00A5CBB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5661F1B11A35D41A00A5CBB6 /* qrcode */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5661F1B31A35D41A00A5CBB6 /* qrcode */ = {
+			isa = PBXGroup;
+			children = (
+				5661F1BB1A35D43300A5CBB6 /* DataMatrix.h */,
+				5661F1BC1A35D43300A5CBB6 /* DataMatrix.mm */,
+				5661F1BD1A35D43300A5CBB6 /* QR_Encode.cpp */,
+				5661F1BE1A35D43300A5CBB6 /* QR_Encode.h */,
+				5661F1BF1A35D43300A5CBB6 /* QREncoder-Prefix.pch */,
+				5661F1C01A35D43300A5CBB6 /* QREncoder.h */,
+				5661F1C11A35D43300A5CBB6 /* QREncoder.mm */,
+				5661F1B41A35D41A00A5CBB6 /* main.mm */,
+			);
+			path = qrcode;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5661F1B01A35D41A00A5CBB6 /* qrcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5661F1B81A35D41B00A5CBB6 /* Build configuration list for PBXNativeTarget "qrcode" */;
+			buildPhases = (
+				5661F1AD1A35D41A00A5CBB6 /* Sources */,
+				5661F1AE1A35D41A00A5CBB6 /* Frameworks */,
+				5661F1AF1A35D41A00A5CBB6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = qrcode;
+			productName = qrcode;
+			productReference = 5661F1B11A35D41A00A5CBB6 /* qrcode */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5661F1A91A35D41A00A5CBB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = willonboy;
+				TargetAttributes = {
+					5661F1B01A35D41A00A5CBB6 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 5661F1AC1A35D41A00A5CBB6 /* Build configuration list for PBXProject "qrcode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5661F1A81A35D41A00A5CBB6;
+			productRefGroup = 5661F1B21A35D41A00A5CBB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5661F1B01A35D41A00A5CBB6 /* qrcode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5661F1AD1A35D41A00A5CBB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5661F1C21A35D43300A5CBB6 /* DataMatrix.mm in Sources */,
+				5661F1C31A35D43300A5CBB6 /* QR_Encode.cpp in Sources */,
+				5661F1B51A35D41A00A5CBB6 /* main.mm in Sources */,
+				5661F1C41A35D43300A5CBB6 /* QREncoder.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5661F1B61A35D41A00A5CBB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5661F1B71A35D41A00A5CBB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5661F1B91A35D41B00A5CBB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				GCC_THUMB_SUPPORT = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5661F1BA1A35D41B00A5CBB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				GCC_THUMB_SUPPORT = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5661F1AC1A35D41A00A5CBB6 /* Build configuration list for PBXProject "qrcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5661F1B61A35D41A00A5CBB6 /* Debug */,
+				5661F1B71A35D41A00A5CBB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5661F1B81A35D41B00A5CBB6 /* Build configuration list for PBXNativeTarget "qrcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5661F1B91A35D41B00A5CBB6 /* Debug */,
+				5661F1BA1A35D41B00A5CBB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5661F1A91A35D41A00A5CBB6 /* Project object */;
+}
