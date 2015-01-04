@@ -236,5 +236,7 @@ else
 fi
 
 
+cd $projPath
+`svn revert ${infoPlistFilePath}`
 
 
