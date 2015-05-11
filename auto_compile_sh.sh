@@ -23,6 +23,8 @@
 
 # 工程Target名称
 projTargetName=Line0new
+# 返回当前时间时间截
+timestamp=`date +%s`
 dateStr=`date "+%Y_%m_%d_%H_%M_%S"`
 # 工程路径 路径赋值不能在路径两端添加双引号
 projPath=~/Desktop/Line0new
@@ -56,7 +58,7 @@ infoPlistFilePath=./Line0new/Line0new-Info.plist
 
 # 修改Info.plist配置文件
 /usr/libexec/PlistBuddy -c "set CFBundleIdentifier ${bundleIdentifier}" ${infoPlistFilePath}
-/usr/libexec/PlistBuddy -c "set CFBundleVersion ${dateStr}" ${infoPlistFilePath}
+/usr/libexec/PlistBuddy -c "set CFBundleVersion ${timestamp}" ${infoPlistFilePath}
 # /usr/libexec/PlistBuddy -c "set CFBundleShortVersionString 1.3" ${infoPlistFilePath}
 /usr/libexec/PlistBuddy -c "delete CFBundleDisplayName" ${infoPlistFilePath}
 /usr/libexec/PlistBuddy -c "add CFBundleDisplayName string ${bundleDisplayName}" ${infoPlistFilePath}
@@ -222,10 +224,10 @@ done
 
 # 最后同步的结果
 if [[ $syncResult == true ]]; then
-    echo "sync success!"
     qrcodeImgFilePath=${dateStr}.jpeg
     #line0.qiniudn.com 是我们公司用到的七牛分配的域名, 需要自行修改
     installHtmUrl=http://line0.qiniudn.com/${installFileName}
+    echo "sync success! 时间截:${timestamp}  文件后缀:${dateStr} enterprisePlist FileName: ${enterprisePlistFileName}"
     # 生成二维码图片, 并存放到Desktop路径下
     syncLog=`${qiniuCmdToolDir}/qrcode ${installHtmUrl} ~/Desktop/${qrcodeImgFilePath}`
 
