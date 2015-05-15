@@ -90,7 +90,6 @@ result=$(/usr/bin/xcrun -sdk iphoneos PackageApplication -v ./build/Release-ipho
 ls ./build/Release-iphoneos/${projTargetName}.app.dSYM &>/dev/null
 rtnValue=$?
 if [ $rtnValue == 0 ];then
-    `echo "${ipaFilePath}.${timestamp}.dSYM"`
     cp -rf ./build/Release-iphoneos/${projTargetName}.app.dSYM ${ipaFilePath}.${timestamp}.dSYM
 fi
 
