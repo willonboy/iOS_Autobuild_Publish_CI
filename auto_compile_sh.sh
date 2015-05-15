@@ -86,6 +86,13 @@ fi
 # 打包ipa
 result=$(/usr/bin/xcrun -sdk iphoneos PackageApplication -v ./build/Release-iphoneos/${projTargetName}.app -o ${ipaFilePath})
 
+# 判断是否执行过ipa-build脚本生成对应的app的dSYM文件
+ls ./build/Release-iphoneos/${projTargetName}.app.dSYM &>/dev/null
+rtnValue=$?
+if [ $rtnValue == 0 ];then
+    `echo "${ipaFilePath}.${timestamp}.dSYM"`
+    cp -rf ./build/Release-iphoneos/${projTargetName}.app.dSYM ${ipaFilePath}.${timestamp}.dSYM
+fi
 
 # 判断是否生成ipa文件成功
 ls ${ipaFilePath} &>/dev/null
